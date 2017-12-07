@@ -2,12 +2,12 @@
 properties([
     [$class: 'GithubProjectProperty',
     displayName: '',
-    projectUrlStr: 'https://github.com/VeridicSolutions99/Veridic_Atlanta.git/'],
+    projectUrlStr: 'https://github.com/chvaraprasad/vp1.git/'],
    pipelineTriggers([
      
     upstream(
       threshold: 'SUCCESS',
-      upstreamProjects: 'https://github.com/taskbuilder/vp3.git')
+      upstreamProjects: 'https://github.com/taskbuilder/vp3/')
     ])
 ])
 pipeline {
